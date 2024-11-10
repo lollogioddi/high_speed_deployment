@@ -1,0 +1,284 @@
+ROS_DISTRO was set to 'melodic' before. Please make sure that the environment does not mix paths from different distributions.
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using CATKIN_DEVEL_PREFIX: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel
+-- Using CMAKE_PREFIX_PATH: /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1;/media/lollogioddi/SSD/Matlab/toolbox/ros/mlroscpp/custom_messages
+-- This workspace overlays: /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1;/media/lollogioddi/SSD/Matlab/toolbox/ros/mlroscpp/custom_messages
+-- Found PythonInterp: /home/lollogioddi/.matlab/R2023a/ros1/glnxa64/venv/bin/python3 (found suitable version "3.8", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /home/lollogioddi/.matlab/R2023a/ros1/glnxa64/venv/bin/python3
+-- Using Debian Python package layout
+-- Using empy: /usr/bin/empy
+-- Using CATKIN_ENABLE_TESTING: off
+-- catkin 0.8.10
+-- BUILD_SHARED_LIBS is on
+-- BUILD_SHARED_LIBS is on
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- ~~  traversing 1 packages in topological order:
+-- ~~  - rotors_comm
+-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- +++ processing catkin package: 'rotors_comm'
+-- ==> add_subdirectory(rotors_comm)
+CMake Warning at /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: geneus
+Call Stack (most recent call first):
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  rotors_comm/CMakeLists.txt:20 (find_package)
+
+
+CMake Warning at /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: genlisp
+Call Stack (most recent call first):
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  rotors_comm/CMakeLists.txt:20 (find_package)
+
+
+CMake Warning at /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsg-extras.cmake:49 (message):
+  Unknown message generator specified in ROS_LANG_DISABLE: gennodejs
+Call Stack (most recent call first):
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/genmsgConfig.cmake:222 (include)
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/gencpp/cmake/gencppConfig.cmake:197 (find_package)
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/message_generation/cmake/message_generationConfig.cmake:197 (find_package)
+  /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/catkin/cmake/catkinConfig.cmake:76 (find_package)
+  rotors_comm/CMakeLists.txt:20 (find_package)
+
+
+-- Using these message generators: gencpp;genpy
+-- rotors_comm: 1 messages, 6 services
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    Boost_NAMESPACE
+
+
+-- Build files have been written to: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build
+[1/32] cd /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/rotors_comm && /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/lollogioddi/.matlab/R2023a/ros1/glnxa64/venv/bin/python3 /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotors_comm /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/srv/stop_simulation.srv
+[2/32] cd /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/rotors_comm && /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/lollogioddi/.matlab/R2023a/ros1/glnxa64/venv/bin/python3 /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotors_comm /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/srv/reset_simulation.srv
+[3/32] cd /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/rotors_comm && /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/lollogioddi/.matlab/R2023a/ros1/glnxa64/venv/bin/python3 /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotors_comm /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/srv/Octomap.srv std_msgs/Header:geometry_msgs/Point:octomap_msgs/Octomap
+[4/32] cd /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/rotors_comm && /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/lollogioddi/.matlab/R2023a/ros1/glnxa64/venv/bin/python3 /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotors_comm /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/srv/start_simulation.srv
+[5/32] cd /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/rotors_comm && /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/lollogioddi/.matlab/R2023a/ros1/glnxa64/venv/bin/python3 /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotors_comm /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/srv/RecordRosbag.srv
+[6/32] cd /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/rotors_comm && /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/lollogioddi/.matlab/R2023a/ros1/glnxa64/venv/bin/python3 /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotors_comm /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/srv/PerformanceMetrics.srv
+[7/32] cd /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/rotors_comm && /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build/catkin_generated/env_cached.sh /home/lollogioddi/.matlab/R2023a/ros1/glnxa64/venv/bin/python3 /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py rotors_comm /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/msg/WindSpeed.msg std_msgs/Header:geometry_msgs/Vector3
+[8/32] Generating Python code from SRV rotors_comm/RecordRosbag
+[9/32] Generating Python code from SRV rotors_comm/PerformanceMetrics
+[10/32] Generating Python from MSG rotors_comm/WindSpeed
+[11/32] Generating Python code from SRV rotors_comm/Octomap
+[12/32] Generating Python code from SRV rotors_comm/reset_simulation
+[13/32] Generating Python code from SRV rotors_comm/stop_simulation
+[14/32] Generating Python code from SRV rotors_comm/start_simulation
+[15/32] Generating Python msg __init__.py for rotors_comm
+[16/32] Generating C++ code from rotors_comm/WindSpeed.msg
+[17/32] Generating Python srv __init__.py for rotors_comm
+[18/32] Generating C++ code from rotors_comm/Octomap.srv
+[19/32] Generating C++ code from rotors_comm/PerformanceMetrics.srv
+[20/32] Generating C++ code from rotors_comm/reset_simulation.srv
+[21/32] Generating C++ code from rotors_comm/RecordRosbag.srv
+[22/32] Generating C++ code from rotors_comm/start_simulation.srv
+[23/32] Generating C++ code from rotors_comm/stop_simulation.srv
+[24/32] Building CXX object rotors_comm/CMakeFiles/rotors_comm_matlab.dir/src/rotors_comm_WindSpeed_message.cpp.o
+In file included from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/publisher.h:35:0,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/node_handle.h:32,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/ros.h:45,
+                 from /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/src/rotors_comm_WindSpeed_message.cpp:27:
+/media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:77:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+ )
+ ^
+[25/32] Building CXX object rotors_comm/CMakeFiles/rotors_comm_matlab.dir/src/rotors_comm_RecordRosbag_service.cpp.o
+In file included from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/publisher.h:35:0,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/node_handle.h:32,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/ros.h:45,
+                 from /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/src/rotors_comm_RecordRosbag_service.cpp:27:
+/media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:77:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+ )
+ ^
+[26/32] Building CXX object rotors_comm/CMakeFiles/rotors_comm_matlab.dir/src/rotors_comm_PerformanceMetrics_service.cpp.o
+In file included from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/publisher.h:35:0,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/node_handle.h:32,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/ros.h:45,
+                 from /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/src/rotors_comm_PerformanceMetrics_service.cpp:27:
+/media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:77:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+ )
+ ^
+[27/32] Building CXX object rotors_comm/CMakeFiles/rotors_comm_matlab.dir/src/rotors_comm_Octomap_service.cpp.o
+In file included from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/publisher.h:35:0,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/node_handle.h:32,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/ros.h:45,
+                 from /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/src/rotors_comm_Octomap_service.cpp:27:
+/media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:77:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+ )
+ ^
+[28/32] Building CXX object rotors_comm/CMakeFiles/rotors_comm_matlab.dir/src/rotors_comm_stop_simulation_service.cpp.o
+In file included from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/publisher.h:35:0,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/node_handle.h:32,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/ros.h:45,
+                 from /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/src/rotors_comm_stop_simulation_service.cpp:27:
+/media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:77:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+ )
+ ^
+[29/32] Building CXX object rotors_comm/CMakeFiles/rotors_comm_matlab.dir/src/rotors_comm_reset_simulation_service.cpp.o
+In file included from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/publisher.h:35:0,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/node_handle.h:32,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/ros.h:45,
+                 from /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/src/rotors_comm_reset_simulation_service.cpp:27:
+/media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:77:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+ )
+ ^
+[30/32] Building CXX object rotors_comm/CMakeFiles/rotors_comm_matlab.dir/src/rotors_comm_start_simulation_service.cpp.o
+In file included from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/publisher.h:35:0,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/node_handle.h:32,
+                 from /media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/include/ros/ros.h:45,
+                 from /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/rotors_comm/src/rotors_comm_start_simulation_service.cpp:27:
+/media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/boost/include/boost/bind.hpp:77:1: note: #pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace mwboost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+ )
+ ^
+[31/32] Linking CXX shared library /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/librotors_comm_matlab.so
+[31/32] Install the project...
+-- Install configuration: "Release"
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/_setup_util.py
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/env.sh
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/setup.bash
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/local_setup.bash
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/setup.sh
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/local_setup.sh
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/setup.zsh
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/local_setup.zsh
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/.rosinstall
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/msg/WindSpeed.msg
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/srv/Octomap.srv
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/srv/PerformanceMetrics.srv
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/srv/RecordRosbag.srv
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/srv/reset_simulation.srv
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/srv/start_simulation.srv
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/srv/stop_simulation.srv
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/cmake/rotors_comm-msg-paths.cmake
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/stop_simulationRequest.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/RecordRosbag.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/OctomapRequest.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/RecordRosbagRequest.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/RecordRosbagResponse.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/stop_simulationResponse.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/stop_simulation.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/reset_simulation.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/start_simulation.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/reset_simulationResponse.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/OctomapResponse.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/start_simulationRequest.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/PerformanceMetricsRequest.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/PerformanceMetricsResponse.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/PerformanceMetrics.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/Octomap.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/reset_simulationRequest.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/start_simulationResponse.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/WindSpeed.h
+Listing '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm'...
+Compiling '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/__init__.py'...
+Listing '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/msg'...
+Compiling '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/msg/_WindSpeed.py'...
+Compiling '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/msg/__init__.py'...
+Listing '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/srv'...
+Compiling '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/srv/_Octomap.py'...
+Compiling '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/srv/_PerformanceMetrics.py'...
+Compiling '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/srv/_RecordRosbag.py'...
+Compiling '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/srv/__init__.py'...
+Compiling '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/srv/_reset_simulation.py'...
+Compiling '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/srv/_start_simulation.py'...
+Compiling '/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel/lib/python3/dist-packages/rotors_comm/srv/_stop_simulation.py'...
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/__init__.py
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/__pycache__
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/__pycache__/__init__.cpython-38.pyc
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/msg
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/msg/_WindSpeed.py
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/msg/__init__.py
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/msg/__pycache__
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/msg/__pycache__/_WindSpeed.cpython-38.pyc
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/msg/__pycache__/__init__.cpython-38.pyc
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/__init__.py
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/_Octomap.py
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/_stop_simulation.py
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/_start_simulation.py
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/__pycache__
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/__pycache__/_stop_simulation.cpython-38.pyc
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/__pycache__/_Octomap.cpython-38.pyc
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/__pycache__/_start_simulation.cpython-38.pyc
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/__pycache__/_PerformanceMetrics.cpython-38.pyc
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/__pycache__/_RecordRosbag.cpython-38.pyc
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/__pycache__/__init__.cpython-38.pyc
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/__pycache__/_reset_simulation.cpython-38.pyc
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/_RecordRosbag.py
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/_reset_simulation.py
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/python3/dist-packages/rotors_comm/srv/_PerformanceMetrics.py
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/pkgconfig/rotors_comm.pc
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/cmake/rotors_comm-msg-extras.cmake
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/cmake/rotors_commConfig.cmake
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/cmake/rotors_commConfig-version.cmake
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/share/rotors_comm/package.xml
+-- Up-to-date: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include
+-- Up-to-date: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/include/rotors_comm/visibility_control.h
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/lib/librotors_comm_matlab.so
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m/
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/reset_simulationResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/start_simulationResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/RecordRosbagResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/OctomapResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/PerformanceMetricsRequest.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/WindSpeed.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/OctomapRequest.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/stop_simulationResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/start_simulationRequest.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/stop_simulationRequest.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/PerformanceMetricsResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/reset_simulationRequest.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+msggen/+rotors_comm/RecordRosbagRequest.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/reset_simulationResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/start_simulationResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/performanceMetricsRequest.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/octomapResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/recordRosbagResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/octomapRequest.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/windSpeed.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/stop_simulationResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/start_simulationRequest.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/stop_simulationRequest.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/recordRosbagRequest.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/performanceMetricsResponse.m
+-- Installing: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install/m//+ros/+internal/+ros/+custommessages/+rotors_comm/reset_simulationRequest.m
+Base path: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64
+Source space: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src
+Build space: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build
+Devel space: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel
+Install space: /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install
+Creating symlink "/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src/CMakeLists.txt" pointing to "/media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1/share/catkin/cmake/toplevel.cmake"
+####
+#### Running command: "cmake /home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/src -DALIAS_ROS1_CLASS_LOADER=1 -DBoost_NAMESPACE=mwboost -DCATKIN_ENABLE_TESTING=off -DCMAKE_PREFIX_PATH=/media/lollogioddi/SSD/Matlab/sys/ros1/glnxa64/ros1;/media/lollogioddi/SSD/Matlab/toolbox/ros/mlroscpp/custom_messages -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_FLAGS_RELEASE=-O0 -DCATKIN_DEVEL_PREFIX=/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/devel -DCMAKE_INSTALL_PREFIX=/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/install -G Ninja" in "/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build"
+####
+####
+#### Running command: "ninja install install -j4 -l4" in "/home/lollogioddi/catkin_ws/src/rotors_simulator/matlab_msg_gen_ros1/glnxa64/build"
+####

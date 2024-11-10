@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="multiple_simulation_control_node" pkg="rotors_gazebo" type="multiple_simulation_control_node.py" output="screen"/>
+</launch>

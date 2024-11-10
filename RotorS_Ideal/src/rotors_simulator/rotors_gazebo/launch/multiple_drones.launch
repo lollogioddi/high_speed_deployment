@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="mav_name" default="pelican"/>
+  <arg name="enable_logging" default="false" />
+  <arg name="enable_ground_truth" default="true" />
+  <arg name="log_file" default="$(arg mav_name)" />
+  <arg name="controller_type" default="QuaternionBased_Spherical_SMC.py"/>
+  <arg name="enable_my_logging" default="false"/>
+  <arg name="record_topics" default="/time_in_sec /$(arg mav_name)_1/position /$(arg mav_name)_1/comm_pos /$(arg mav_name)_1/pos_err /$(arg mav_name)_1/angular_pos /$(arg mav_name)_1/angular_err /velocity_topic"/>
+  <arg name="gains_file" default=""/>
+  <arg name="P_gain" default=""/>
+  <arg name="D_gain" default=""/>
+  <arg name="rosbag_name" default="$(arg P_gain)_$(arg D_gain)"/>
+  <!-- Spawn drones with different namespaces and initial positions -->
+  <!-- drone 1 -->
+  <group ns="$(arg mav_name)_1">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="mav_name" value="$(arg mav_name)" />
+      <arg name="namespace" value="$(arg mav_name)_1" />
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo" />
+      <arg name="enable_logging" value="$(arg enable_logging)" />
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)" />
+      <arg name="log_file" value="$(arg log_file)"/>
+      <arg name="x" value="10.0"/>
+      <arg name="y" value="10.0"/>
+      <arg name="z" value= "500.1"/>
+    </include>
+    <node name="lee_position_controller_node" pkg="rotors_control" type="$(arg controller_type)" output="screen">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name)_for_tuning_1.yaml" />
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml" />
+      <remap from="odometry" to="$(arg mav_name)_1/odometry_sensor/odometry" />
+    </node>
+    <node name="hovering_example" pkg="rotors_gazebo" type="hovering_example.py" output="screen"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <group if="$(arg enable_my_logging)">
+      <node name="rosbag_record" pkg="rosbag" type="record" args="-O /media/lollogioddi/SSD/SMC_tuning/Ideal_sensor/$(arg rosbag_name).bag $(arg record_topics)" output="screen"> </node>
+    </group>
+  </group>
+  <!-- drone 2 -->
+  <group ns="$(arg mav_name)_2">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="mav_name" value="$(arg mav_name)" />
+      <arg name="namespace" value="$(arg mav_name)_2" />
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo" />
+      <arg name="enable_logging" value="$(arg enable_logging)" />
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)" />
+      <arg name="log_file" value="$(arg log_file)"/>
+      <arg name="x" value="-10.0"/>
+      <arg name="y" value="10.0"/>
+      <arg name="z" value= "500.1"/>
+    </include>
+    <node name="lee_position_controller_node" pkg="rotors_control" type="$(arg controller_type)" output="screen">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name)_for_tuning_2.yaml" />
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml" />
+      <remap from="odometry" to="$(arg mav_name)_2/odometry_sensor/odometry" />
+    </node>
+    <node name="hovering_example" pkg="rotors_gazebo" type="hovering_example.py" output="screen"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <group if="$(arg enable_my_logging)">
+      <node name="rosbag_record" pkg="rosbag" type="record" args="-O /media/lollogioddi/SSD/SMC_tuning/Ideal_sensor/$(arg rosbag_name).bag $(arg record_topics)" output="screen"> </node>
+    </group>
+  </group>
+  <!-- drone 3 -->
+  <group ns="$(arg mav_name)_3">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="mav_name" value="$(arg mav_name)" />
+      <arg name="namespace" value="$(arg mav_name)_3" />
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo" />
+      <arg name="enable_logging" value="$(arg enable_logging)" />
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)" />
+      <arg name="log_file" value="$(arg log_file)"/>
+      <arg name="x" value="10.0"/>
+      <arg name="y" value="-10.0"/>
+      <arg name="z" value= "500.1"/>
+    </include>
+    <node name="lee_position_controller_node" pkg="rotors_control" type="$(arg controller_type)" output="screen">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name)_for_tuning_3.yaml" />
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml" />
+      <remap from="odometry" to="$(arg mav_name)_3/odometry_sensor/odometry" />
+    </node>
+    <node name="hovering_example" pkg="rotors_gazebo" type="hovering_example.py" output="screen"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <group if="$(arg enable_my_logging)">
+      <node name="rosbag_record" pkg="rosbag" type="record" args="-O /media/lollogioddi/SSD/SMC_tuning/Ideal_sensor/$(arg rosbag_name).bag $(arg record_topics)" output="screen"> </node>
+    </group>
+  </group>
+  <!-- drone 4 -->
+  <!-- <group ns="$(arg mav_name)_4">
+    <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+      <arg name="mav_name" value="$(arg mav_name)" />
+      <arg name="namespace" value="$(arg mav_name)_4" />
+      <arg name="model" value="$(find rotors_description)/urdf/mav_generic_odometry_sensor.gazebo" />
+      <arg name="enable_logging" value="$(arg enable_logging)" />
+      <arg name="enable_ground_truth" value="$(arg enable_ground_truth)" />
+      <arg name="log_file" value="$(arg log_file)"/>
+      <arg name="x" value="-10.0"/>
+      <arg name="y" value="-10.0"/>
+      <arg name="z" value= "0.1"/>
+    </include>
+    <node name="lee_position_controller_node" pkg="rotors_control" type="$(arg controller_type)" output="screen">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name)_for_tuning_4.yaml" />
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml" />
+      <remap from="odometry" to="$(arg mav_name)_4/odometry_sensor/odometry" />
+    </node>
+    <node name="hovering_example" pkg="rotors_gazebo" type="hovering_example.py" output="screen"/>
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <group if="$(arg enable_my_logging)">
+      <node name="rosbag_record" pkg="rosbag" type="record" args="-O /media/lollogioddi/SSD/SMC_tuning/Ideal_sensor/$(arg rosbag_name).bag $(arg record_topics)" output="screen"> </node>
+    </group>
+  </group> -->
+</launch>

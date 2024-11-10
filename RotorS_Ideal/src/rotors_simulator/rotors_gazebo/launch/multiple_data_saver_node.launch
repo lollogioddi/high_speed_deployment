@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="mav_name" default="pelican"/>
+  <!-- firt drone data saver node -->
+  <group ns="$(arg mav_name)_1">
+    <node name="data_saver_node" pkg="rotors_evaluation" type="data_saver.py" output="screen"/>
+  </group>
+  <!-- second drone data saver node -->
+  <group ns="$(arg mav_name)_2">
+    <node name="data_saver_node" pkg="rotors_evaluation" type="data_saver.py" output="screen"/>
+  </group>
+  <!-- third drone data saver node -->
+  <group ns="$(arg mav_name)_3">
+    <node name="data_saver_node" pkg="rotors_evaluation" type="data_saver.py" output="screen"/>
+  </group>
+  <!-- fourt drone data saver node -->
+  <!-- <group ns="$(arg mav_name)_4">
+    <node name="data_saver_node" pkg="rotors_evaluation" type="data_saver.py" output="screen"/>
+  </group> -->
+</launch>
