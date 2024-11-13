@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="data_saver_node_msf" pkg="rotors_evaluation" type="data_saver.py" output="screen"/>
+</launch>

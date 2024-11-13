@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="mav_name" default="pelican"/>
+  <arg name="enable_logging" default="false"/>
+  <arg name="enable_my_logging" default="false"/>
+  <arg name="enable_ground_truth" default="true"/>
+  <arg name="log_file" default="$(arg mav_name)"/>
+  <arg name="controller_type" default="Lee_position_controller.py"/>
+  <arg name="rosbag_path" default="Lee_position"/> 
+  <arg name="record_topics" default="/time_in_sec /pelican/position /pelican/comm_pos /pelican/pos_err /pelican/angular_pos /pelican/angular_err /velocity_topic"/>
+  <arg name="gains_file" default=""/>
+  <arg name="P_gain" default=""/>
+  <arg name="D_gain" default=""/>
+  <arg name="rosbag_name" default="$(arg P_gain)_$(arg D_gain)"/>
+  <arg name="velocities" default=""/>
+
+
+  <include file="$(find rotors_gazebo)/launch/spawn_mav.launch">
+    <arg name="mav_name" value="$(arg mav_name)" />
+    <arg name="model" value="$(find rotors_description)/urdf/$(arg mav_name)_generic_pose_sensor.gazebo" />
+    <arg name="enable_logging" value="$(arg enable_logging)" />
+    <arg name="enable_ground_truth" value="$(arg enable_ground_truth)" />
+    <arg name="log_file" value="$(arg log_file)"/>
+  </include>
+
+  <group ns="$(arg mav_name)">
+    <node name="msf" pkg="msf_updates" type="pose_sensor" clear_params="true" output="screen">
+      <remap from="msf_updates/pose_with_covariance_input" to="odometry_sensor1/pose_with_covariance" />
+      <remap from="msf_core/imu_state_input" to="imu" />
+        <rosparam command="load" file="$(find rotors_simulator_demos)/resource/msf_simulator.yaml" />
+      <param name="capability_group" value="Core"></param>
+    </node>
+
+    <node name="lee_position_controller_node" pkg="rotors_control" type="$(arg controller_type)" output="screen">
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/lee_controller_$(arg mav_name)$(arg gains_file).yaml" />
+      <rosparam command="load" file="$(find rotors_gazebo)/resource/$(arg mav_name).yaml" />
+      <remap from="odometry" to="msf_core/odometry" />
+    </node>
+	
+    <node name="hovering_example_msf" pkg="rotors_simulator_demos" type="hovering_example_msf.py" output="screen"/>
+    <group if="$(arg enable_my_logging)">
+      <node name='data_saver_node' pkg="rotors_evaluation" type="data_saver.py" output="screen"/>
+      <node name="rosbag_record" pkg="rosbag" type="record" args="-O /home/lollogioddi/Documents/thesis/stesura/raccolta_dati_finale_2/real_12sett/$(arg rosbag_name).bag $(arg record_topics)" output="screen"> </node>
+    </group>
+  </group>
+</launch>

@@ -1,0 +1,16 @@
+attitude_gain_1: 
+  {x: 2.923308340002603, y: 4.058425003262572, z: 2.5324729385654763}
+angular_rate_gain_1: 
+  {x: 0.4977977900421452, y: 0.6605614838475912, z: 1.2858079541120395}
+position_gain_1: 
+  {x: 4.0, y: 4.0, z: 4.0}
+velocity_gain_1: 
+  {x: 2.7, y: 2.695059597003405, z: 2.7}
+attitude_gain_Lee: 
+  {x: 1.57, y: 1.57, z: 0.035}
+angular_rate_gain_Lee: 
+  {x: 0.22, y: 0.22, z: 0.01}
+position_gain_Lee: 
+  {x: 4, y: 4, z: 4}
+velocity_gain_Lee: 
+  {x: 2.7, y: 2.7, z: 2.7}

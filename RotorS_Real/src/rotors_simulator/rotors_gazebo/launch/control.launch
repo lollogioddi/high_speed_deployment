@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="simulation_control_node_msf" pkg="rotors_gazebo" type="simulation_control_node.py" output="screen"/>
+</launch>

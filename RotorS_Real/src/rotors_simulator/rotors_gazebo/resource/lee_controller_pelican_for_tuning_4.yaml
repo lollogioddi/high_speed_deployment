@@ -1,0 +1,4 @@
+angular_rate_gain: {x: 1.85311670611, y: 1.85311670611, z: 0.01}
+attitude_gain: {x: 1.9282, y: 1.9282, z: 0.035}
+position_gain: {x: 4, y: 4, z: 4}
+velocity_gain: {x: 2.7, y: 2.7, z: 2.7}
